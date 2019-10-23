@@ -1,0 +1,42 @@
+Part 1:
+
+-> CKY parsing is implemented in parser.py. This file takes two args [-T or --test-sentences] for filepath of test sentences and [-W or --weights] for weights that are used in building tree.
+  Example: python parser.py -T ./data/test_sentences -W ./data/weights
+
+-> parser.py gives output as best parse tree with score for each test sentence in the given test file.
+ Sentence: a a a
+Best tree score: S_0_3 -> A_B_1:13.0
+Parse tree: (S (A a) (B (A a) (A a)))
+
+ Sentence: b a a a a a a
+Best tree score: S_0_7 -> B_A_6:506.0
+Parse tree: (S (B (B (B (B (B (C b) (A a)) (A a)) (A a)) (A a)) (A a)) (A a))
+
+ Sentence: a a a a a a c
+Best tree score: S_0_7 -> A_C_1:256.0
+Parse tree: (S (A a) (C (A a) (C (A a) (C (A a) (C (A a) (C (A a) (C c)))))))
+
+Part 2:
+
+-> Perceptron training algorithm implemented with features given in problem is in perceptron.py. This file takes two args [-R --train-sentences] for filepath of sentences to train and [-L --weights-learned] for writing the learned weights to a file.
+
+  Example: python perceptron.py -R ./data/train_sentences -L ./data/weights_learned
+
+-> perceptron.py gives output of decoded tree with CKY parsing and given tree for every sentence and also spits out updated weights after every iteration (sentence).
+
+ Example: 
+ iter : 0
+Gold tree: (S (A a) (B (A a) (A b)))
+Decoded tree: (S (S a) (S (S a) (S b)))
+weights after update: {'R_S_A_B': 1, 'F_S_a': -1, 'L_S_b': -1, 'T_A_a': 2, 'R_B_A_A': 1, 'F_B_a': 1, 'L_B_b': 1, 'T_A_b': 1, 'R_S_S_S': -2, 'T_S_a': -2, 'T_S_b': -1}
+
+ iter : 1
+Gold tree: (S (A a) (C (A b) (A c)))
+Decoded tree: (S (A a) (S (A b) (S c)))
+weights after update: {'R_S_A_B': 1, 'F_S_a': -1, 'L_S_b': -1, 'T_A_a': 2, 'R_B_A_A': 1, 'F_B_a': 1, 'L_B_b': 1, 'T_A_b': 1, 'R_S_S_S': -2, 'T_S_a': -2, 'T_S_b': -1, 'R_S_A_C': 1, 'L_S_c': -1, 'R_C_A_A': 1, 'F_C_b': 1, 'L_C_c': 1, 'T_A_c': 1, 'R_S_A_S': -2, 'F_S_b': -1, 'T_S_c': -1}
+
+ iter : 2
+Gold tree: (S (B (A a) (A b)) (A a))
+Decoded tree: (S (B (A a) (A b)) (A a))
+weights after update: {'R_S_A_B': 1, 'F_S_a': -1, 'L_S_b': -1, 'T_A_a': 2, 'R_B_A_A': 1, 'F_B_a': 1, 'L_B_b': 1, 'T_A_b': 1, 'R_S_S_S': -2, 'T_S_a': -2, 'T_S_b': -1, 'R_S_A_C': 1, 'L_S_c': -1, 'R_C_A_A': 1, 'F_C_b': 1, 'L_C_c': 1, 'T_A_c': 1, 'R_S_A_S': -2, 'F_S_b': -1, 'T_S_c': -1, 'R_S_B_A': 0, 'L_S_a': 0}
+

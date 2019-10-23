@@ -1,0 +1,17 @@
+-> Viterbi decoding algorithm is implemented in hw1.py and given data is ./data folder
+
+How to Run:
+
+-> To test the code, run ./hw1.py and give the observation sentence and expected tag sentence as inputs
+ exmaple: ./hw1.py
+
+[INPUT] 
+ Enter input observation sentence: No , it was n't Black Monday
+ Enter expected tag sequence: RB , PRP VBD RB NNP NNP
+
+[OUTPUT] 
+ Estimated tag sequence: ['UH', ',', 'PRP', 'VBD', 'RB', 'NNP', 'NNP'], 
+ Accuracy for the senetence: 85.71
+ Overall accuracy on test set: 95.03 %
+
+-> Once it runs for the given sentence & tag sequence, it runs on entire test set and shows accuracy. As per my current implementation, I'm getting 95.03% accuracy on whole test set.

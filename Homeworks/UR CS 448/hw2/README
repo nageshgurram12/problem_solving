@@ -1,0 +1,133 @@
+-> Perceptron algorithm is implemented in hw2.py and given data is in ./data folder
+
+-> All the initial weights are initialized with gaussian noise of mean 0 and std 1.
+
+-> Trainig algorithm is implemented according to the class lectures and reference paper.
+
+-> As the training data is huge, I took random bootstrap samplings of size 1000 to train faster. I've iterated for 50 times with constant learning rate 0.1 and listed down accuracy improvement for every iteration. After 100 iterations, accuracy on training set is 85.58%
+
+-> At the end, I've run for given test data and got accuracy as 84.47 %
+
+Train Accuracy: 0.4690               Iteration : 0
+Train Accuracy: 0.5936               Iteration : 1
+Train Accuracy: 0.6442               Iteration : 2
+Train Accuracy: 0.6759               Iteration : 3
+Train Accuracy: 0.6870               Iteration : 4
+Train Accuracy: 0.7244               Iteration : 5
+Train Accuracy: 0.7265               Iteration : 6
+Train Accuracy: 0.7445               Iteration : 7
+Train Accuracy: 0.7420               Iteration : 8
+Train Accuracy: 0.7534               Iteration : 9
+Train Accuracy: 0.7591               Iteration : 10
+Train Accuracy: 0.7616               Iteration : 11
+Train Accuracy: 0.7659               Iteration : 12
+Train Accuracy: 0.7754               Iteration : 13
+Train Accuracy: 0.7845               Iteration : 14
+Train Accuracy: 0.7710               Iteration : 15
+Train Accuracy: 0.7779               Iteration : 16
+Train Accuracy: 0.7840               Iteration : 17
+Train Accuracy: 0.7789               Iteration : 18
+Train Accuracy: 0.7876               Iteration : 19
+Train Accuracy: 0.7959               Iteration : 20
+Train Accuracy: 0.7924               Iteration : 21
+Train Accuracy: 0.7966               Iteration : 22
+Train Accuracy: 0.7954               Iteration : 23
+Train Accuracy: 0.8062               Iteration : 24
+Train Accuracy: 0.8094               Iteration : 25
+Train Accuracy: 0.8060               Iteration : 26
+Train Accuracy: 0.8073               Iteration : 27
+Train Accuracy: 0.8071               Iteration : 28
+Train Accuracy: 0.8096               Iteration : 29
+Train Accuracy: 0.8116               Iteration : 30
+Train Accuracy: 0.8159               Iteration : 31
+Train Accuracy: 0.8136               Iteration : 32
+Train Accuracy: 0.8154               Iteration : 33
+Train Accuracy: 0.8178               Iteration : 34
+Train Accuracy: 0.8183               Iteration : 35
+Train Accuracy: 0.8202               Iteration : 36
+Train Accuracy: 0.8246               Iteration : 37
+Train Accuracy: 0.8191               Iteration : 38
+Train Accuracy: 0.8175               Iteration : 39
+Train Accuracy: 0.8257               Iteration : 40
+Train Accuracy: 0.8229               Iteration : 41
+Train Accuracy: 0.8308               Iteration : 42
+Train Accuracy: 0.8289               Iteration : 43
+Train Accuracy: 0.8324               Iteration : 44
+Train Accuracy: 0.8259               Iteration : 45
+Train Accuracy: 0.8267               Iteration : 46
+Train Accuracy: 0.8361               Iteration : 47
+Train Accuracy: 0.8331               Iteration : 48
+Train Accuracy: 0.8277               Iteration : 49
+Train Accuracy: 0.8311               Iteration : 50
+Train Accuracy: 0.8338               Iteration : 51
+Train Accuracy: 0.8339               Iteration : 52
+Train Accuracy: 0.8347               Iteration : 53
+Train Accuracy: 0.8297               Iteration : 54
+Train Accuracy: 0.8324               Iteration : 55
+Train Accuracy: 0.8368               Iteration : 56
+Train Accuracy: 0.8344               Iteration : 57
+Train Accuracy: 0.8383               Iteration : 58
+Train Accuracy: 0.8370               Iteration : 59
+Train Accuracy: 0.8339               Iteration : 60
+Train Accuracy: 0.8352               Iteration : 61
+Train Accuracy: 0.8404               Iteration : 62
+Train Accuracy: 0.8411               Iteration : 63
+Train Accuracy: 0.8421               Iteration : 64
+Train Accuracy: 0.8345               Iteration : 65
+Train Accuracy: 0.8345               Iteration : 66
+Train Accuracy: 0.8390               Iteration : 67
+Train Accuracy: 0.8410               Iteration : 68
+Train Accuracy: 0.8322               Iteration : 69
+Train Accuracy: 0.8497               Iteration : 70
+Train Accuracy: 0.8392               Iteration : 71
+Train Accuracy: 0.8445               Iteration : 72
+Train Accuracy: 0.8404               Iteration : 73
+Train Accuracy: 0.8484               Iteration : 74
+Train Accuracy: 0.8447               Iteration : 75
+Train Accuracy: 0.8479               Iteration : 76
+Train Accuracy: 0.8523               Iteration : 77
+Train Accuracy: 0.8515               Iteration : 78
+Train Accuracy: 0.8446               Iteration : 79
+Train Accuracy: 0.8461               Iteration : 80
+Train Accuracy: 0.8494               Iteration : 81
+Train Accuracy: 0.8499               Iteration : 82
+Train Accuracy: 0.8455               Iteration : 83
+Train Accuracy: 0.8474               Iteration : 84
+Train Accuracy: 0.8477               Iteration : 85
+Train Accuracy: 0.8469               Iteration : 86
+Train Accuracy: 0.8490               Iteration : 87
+Train Accuracy: 0.8533               Iteration : 88
+Train Accuracy: 0.8468               Iteration : 89
+Train Accuracy: 0.8480               Iteration : 90
+Train Accuracy: 0.8533               Iteration : 91
+Train Accuracy: 0.8577               Iteration : 92
+Train Accuracy: 0.8496               Iteration : 93
+Train Accuracy: 0.8411               Iteration : 94
+Train Accuracy: 0.8515               Iteration : 95
+Train Accuracy: 0.8545               Iteration : 96
+Train Accuracy: 0.8539               Iteration : 97
+Train Accuracy: 0.8486               Iteration : 98
+Train Accuracy: 0.8558               Iteration : 99
+
+ Observation : ['No', ',', 'it', 'was', "n't", 'Black', 'Monday', '.'] 
+Expected Tag Sequence : ['RB', ',', 'PRP', 'VBD', 'RB', 'NNP', 'NNP', '.'] 
+Estimated Tag Sequence : ['RBR', ',', 'PRP', 'VBD', 'RB', 'NNP', 'NNP', '.']
+
+ Observation : ['Companies', 'added', 'capacity', 'furiously', '.'] 
+Expected Tag Sequence : ['NNS', 'VBD', 'NN', 'RB', '.'] 
+Estimated Tag Sequence : ['$', 'VBD', 'VBN', 'RB', '.']
+
+ Observation : ['Meridian', 'Bancorp', 'Inc.', ',', 'Reading', ',', 'Pa.', ',', 'will', 'acquire', 'Hill', 'Financial', 'Savings', 'Association', ',', 'Red', 'Hill', ',', 'Pa.', ',', 'which', 'had', '$', '2.3', 'billion', 'in', 'assets', '.'] 
+Expected Tag Sequence : ['NNP', 'NNP', 'NNP', ',', 'NN', ',', 'NNP', ',', 'MD', 'VB', 'NNP', 'NNP', 'NNP', 'NNP', ',', 'NNP', 'NNP', ',', 'NNP', ',', 'WDT', 'VBD', '$', 'CD', 'CD', 'IN', 'NNS', '.'] 
+Estimated Tag Sequence : ['RBR', 'LS', 'NNP', ',', 'NNP', ',', 'NNP', ',', 'MD', 'VB', 'NNP', 'NNP', 'NNP', 'NNP', ',', 'NNP', 'NNP', ',', 'NNP', ',', 'WDT', 'VBD', '$', 'CD', 'CD', 'IN', 'NNS', '.']
+
+ Observation : ['A', 'good', 'bet', 'would', 'be', 'the', 'tension', 'between', 'blacks', 'and', 'Jews', 'in', 'New', 'York', 'City', '.'] 
+Expected Tag Sequence : ['DT', 'JJ', 'NN', 'MD', 'VB', 'DT', 'NN', 'IN', 'NNPS', 'CC', 'NNPS', 'IN', 'NNP', 'NNP', 'NNP', '.'] 
+Estimated Tag Sequence : ['$', 'JJ', 'NN', 'MD', 'VB', 'DT', 'NN', 'IN', 'NNS', 'CC', 'NN', 'IN', 'NNP', 'NNP', 'NNP', '.']
+
+ Observation : ['Politicians', 'tried', 'to', 'finger', 'each', 'other', 'for', 'the', 'blame', ',', 'although', 'many', 'analysts', 'doubt', 'that', 'Washington', 'was', 'singly', 'responsible', 'for', 'Wall', 'Street', "'s", 'woes', '.'] 
+Expected Tag Sequence : ['NNS', 'VBD', 'TO', 'VB', 'DT', 'JJ', 'IN', 'DT', 'NN', ',', 'IN', 'JJ', 'NNS', 'VBP', 'IN', 'NNP', 'VBD', 'RB', 'JJ', 'IN', 'NNP', 'NNP', 'POS', 'NNS', '.'] 
+Estimated Tag Sequence : ['IN', 'VBN', 'TO', 'VB', 'DT', 'JJ', 'IN', 'DT', 'NN', ',', 'IN', 'JJ', 'NNS', 'NN', 'IN', 'NNP', 'VBD', 'JJ', 'JJ', 'IN', 'NNP', 'NNP', 'POS', 'NN', '.']
+
+Test accuracy : 0.8447
+

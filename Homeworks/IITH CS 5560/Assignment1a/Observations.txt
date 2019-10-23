@@ -1,0 +1,4 @@
+In the attached pdf I've taken plots for all univariate discrete and continuous random variables for paramter variation against datasize.
+a) Its observed that for all the distributions when dataset size is growing the estimated paramter values using method of moments is coming to saturation and plot becomes almost straight line. Its also observed that when data is not following distribution the paramters are not converging to single value even when dataset size becomes big.
+
+b) For multivariate distributions I've plotted the liklihood mean for the distribution for growing dataset sizes and its observed that its continuously decreasing at the end.

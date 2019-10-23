@@ -1,0 +1,21 @@
+Image classification with different classifiers:
+
+Data source : https://archive.ics.uci.edu/ml/datasets/Image+Segmentation
+
+Input data has 19 real valued features for 7 classes.
+
+In this dataset both training and testing data set is given separately.
+
+1) Classification with Gaussian Discriminant:
+ In the given data set, classes have uniform prior, so we can consider only likelihood for parameter estimation
+ 
+ With QDA classifer, for given test data, Accuracy : 14.28%
+ 
+2) Classification with Naive Bayes :
+  Here, all features are assumed independent while calculating posterior probability for a class.
+  
+  Accuracy : 16.47%
+  
+3) Classification with Logisitc regression (using liblinear package):
+
+  Accuracy : 2.80%

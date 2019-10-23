@@ -1,0 +1,12 @@
+Linear Regression based on Guassian generative model:
+
+input data : Slump test for concrete (http://archive.ics.uci.edu/ml/datasets/Concrete+Slump+Test)
+It has 7 input variables and 3 output variables.
+
+After applying Gaussian based regression model (Generative model), observed explained variance scores for 3 output variables :
+(These results are obtained by taking 20% of input data set randomly as test dataset)
+
+Explained variance for Y0 [SLUMP(cm)] : 0.3635419587805233
+Explained variance for Y1 [FLOW(cm)]: 0.5255239777932958
+Explained variance for Y2 [Compressive Strength (28-day)(Mpa)]: 0.8784326202684619
+
